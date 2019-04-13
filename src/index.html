@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Puppeteer Mocha Scaffold</title>
+    <title>FizzBuzz Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="./js/fizz-buzz.js"></script>
 </head>
 <body>
-    <input id="value" type="number">
-    <button type="submit" id="button">Check</button>
-    <div id="display_value"></div>
+    <div class="container mx-auto my-10 w-full max-w-sm content-center px-15 pt-6 pb-10 bg-purple-lighter rounded-lg">
+        
+        <div class="m-4 text-center ">
+            <p class="text-white text-3xl tracking-wide">FizzBuzz is fun!</p>
+        </div>
+        
+        <div class="m-4 text-center ">
+            <input id="value" type="number" placeholder="Enter a number!" required class="bg-purple-lightest appearance-none border-2 border-grey-lighter rounded w-sm py-2 px-4 purple-lighter text-purple leading-tight focus:outline-none focus:bg-white focus:border-purple">
+            <button type="submit" id="button" class="shadow bg-purple hover:bg-purple-light focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Check </button>
+        </div>    
+    </div>
+
+    <div id="display_value" class="text-center text-purple ">
+        </div>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
     
