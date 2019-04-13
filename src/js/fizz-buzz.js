@@ -1,5 +1,9 @@
 function FizzBuzz()  {
     this.check = (number) => {
-        return number
+        if (number % 5 === 0){
+            return "Buzz";
+        } else {
+            return number
+        }
     }
 }
