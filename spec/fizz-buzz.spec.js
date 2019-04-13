@@ -11,5 +11,9 @@ describe('Fizz Buzz', () => {
         expect(fizzBuzz.check(5)).to.eql("Buzz")
     })
 
+    it ("returns Fizz if number is divisible by 3", () => {
+        expect(fizzBuzz.check(3)).to.eql("Fizz")
+    })
+
 })
 
