@@ -4,5 +4,5 @@ global.browser = new BrowserHelpers()
 global.expect = chai.expect;
 
 const fs = require ('fs');
-let fizzBuzz = fs.readFileSync('./src/js/fizz-buzz/js')
+let fizzBuzz = fs.readFileSync('./src/js/fizz-buzz.js')
 eval ( fizzBuzz + `\nexports.FizzBuzz = FizzBuzz;`)
