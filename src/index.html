@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Puppeteer Mocha Scaffold</title>
+    <script src="./js/fizz-buzz.js"></script>
 </head>
 <body>
-    <!-- Place your content here -->
+    <input id="value" type="number">
+    <button type="submit" id="button">Check</button>
+    <div id="display_value"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    
+            let button = document.getElementById("button")
+            let display = document.getElementById("display_value")
+            button.addEventListener('click', event => {
+                let value = document.getElementById("value").value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                display.innerHTML = result;
+            })
+        })
+    </script>
 </body>
 </html>
