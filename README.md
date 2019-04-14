@@ -25,9 +25,13 @@ Return:
 
 * Find and remove unneccesary code and files.
 
+<br>
+
 # Deployment
 
 Check out the deployed site [here]().
+
+<br>
 
 # Running the tests
 
@@ -66,6 +70,7 @@ To run both feature and unit tests:
 ```
 npm test
 ```
+<br>
 
 # Questions from Craft Academy
 
@@ -84,6 +89,7 @@ eval( fizzBuzz + `\nexports.FizzBuzz = FizzBuzz;`)
 
 The `eval()` evaluates JavaScript code represented as a string.
 
+<br>
 
 ### Question 2. 
 
@@ -91,6 +97,8 @@ To the best of your knowledge please explain why we are placing the `let fizzBuz
 
 ### Answer:
 Because we want all the `it` blocks to be able to access the `fizzBuzz` variable. If it was placed inside of one of the `it` blocks, the `fizzBuzz` then would become a local variable to the `it` block it resides in and other `it` blocks wouldnt be able to call on it. So in order to not repeat ourselves, we place it in the same scope where all the `it` blocks are.
+
+<br>
 
 ### Question 3. 
 
@@ -100,6 +108,7 @@ To the best of your knowledge please explain the difference between using `===` 
 
 `===` is a strict comparison that only returns true if both operands are of the same datatype (and content matches). For example, `34 === 34` returns `true` (compares number with number), but `"34" === 34` returns `false` (compares string with a number). `==` converts the operands to the same datatype before the comparing, therefore both `34 == 34` and `"34" == 34` return `true`.
 
+<br>
 
 ### Question 4. 
 To the best of your knowledge please explain why we are moving `(number % 5 === 0)` to the top?
@@ -108,17 +117,87 @@ To the best of your knowledge please explain why we are moving `(number % 5 === 
 
 Tbh, it's the `(number % 15 === 0)` that should be on the top of the `if` block. That is because the conditional (here) is executed synchronously - if we had a `(number % 5 === 0)` as a first we'd get a 'Buzz' instead of a 'FizzBuzz' for all the operands divisible by 15.
 
+<br>
+
 ### Question 5.
 To the best of your knowledge please explain the difference between feature and unit test.
 
 ### Answer
 A unit test tests logic, a feature test tests the user experience.
 
+<br>
+
+### Question 6. 
+To the best of your knowledge please explain what this following code does:
+```js
+describe('User can input a value and get FizzBuzz results', () => {
+    before(async () => {
+        await  browser.init()
+        await  browser.visitPage('http://localhost:8080/')
+    });
+
+    beforeEach(async () => {
+        await  browser.page.reload();
+    })
+
+    after(async ()=> {
+        await  browser.close();
+    })
+})
+```
+
+### Answer
+
+This means that before the scenario ('User can input a value and get FizzBuzz results') we wait for the Chromium to start and visit the page, then before each feature test the page gets reloaded and, after the test is done with the scenario, Chromium closes.
+
+<br>
+
+### Question 7. 
+To the best of your knowledge please explain what expectations in the context of testing are.
+
+### Answer
+Expectations are the requirements that has to be met, in order for the test to pass.
+
+<br>
+
+### Question 8.
+To the best of your knowledge please write a line to line explanation of what is happening in this code:
+```js
+<script src="./js/fizz-buzz.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                displayDiv.innerHTML = result;
+            })
+        })
+    </script>
+```
+
+### Answer
+First `fizz-buzz.js` is loaded. Then as soon as DOM content is loaded, we wait for the user to click on the button. We know what a button is, because we get it by its id (assigned in HTML). Same for the `div` space where the message will be displayed. So, when the user clicks on the button, we check out what has been put into the value field, send it into the FizzBuzz function and display a message that it returns. 
+
+<br>
+
+### Question 9. 
+To the best of your knowledge please explain what a CDN (Content Delivery Network) is?
+
+### Answer
+CDN is group of servers in different locations. The main principle is that same data is stored in many servers and user receives the content from a server that is located geographically nearest. 
+
+<br>
+
 # Built with
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 [Tailwind](https://tailwindcss.com/docs/what-is-tailwind/) - A utility-first CSS framework for rapidly building custom user interfaces.
+
+<br>
 
 # Tested with
 
@@ -128,15 +207,19 @@ A unit test tests logic, a feature test tests the user experience.
 
 [Puppeteer](https://www.npmjs.com/package/puppeteer) - Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. 
 
+<br>
 
 # Author
 
 **Zane Neikena** - [zanenkn](https://github.com/zanenkn)
 
+<br>
 
 # License
 
 This project utilizes the MIT open-source license. https://opensource.org/licenses/MIT
+
+<br>
 
 # Acknowledgments
 
