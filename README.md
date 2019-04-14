@@ -29,7 +29,7 @@ Return:
 
 # Deployment
 
-Check out the deployed site [here]().
+Check out the deployed site [here](https://zanenkn.github.io/fizzbuzz_js/).
 
 <br>
 
