@@ -19,7 +19,7 @@ describe('User can input value and get a FizzBuzz results', () => {
     await browser.fillIn("input[id='value']", { with: "3" })
     await browser.clickOnButton("button[id='button']")
     let content = await browser.getContent("div[id='display_value']")
-    expect(content).to.eq('Fizz')
+    expect(content).to.include('Fizz')
   });
 
 

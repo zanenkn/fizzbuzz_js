@@ -1,6 +1,17 @@
 # Objectives
 
-### Learning objectives from Craft Academy:
+## Conditions
+Return:
+
+* “fizz” if the number is divisible by 3
+
+* “buzz” if the number is divisible by 5
+
+* “fizzbuzz” if the number is divisible by 15
+
+* the same number if no other requirement is fulfilled
+
+## Learning objectives from Craft Academy:
 
 * Ability to explain concepts
 
@@ -14,7 +25,49 @@
 
 * Find and remove unneccesary code and files.
 
-# Questions
+# Deployment
+
+Check out the deployed site [here]().
+
+# Running the tests
+
+## Prerequisites
+To run the tests, you will need Node.js and NPM installed, here is [how](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+You will also need [Mocha](https://www.npmjs.com/package/mocha), [Chai](https://www.npmjs.com/package/chai) and [Puppeteer](https://www.npmjs.com/package/puppeteer) installed and set up. The easy way to do it is installing and setting up [End-To-End Testing Training Wheels](https://www.npmjs.com/package/e2e_training_wheels):
+
+In this project folder run:
+```
+$ npm i e2e_training_wheels --save-dev
+```
+
+Once the package is installed, run the following script in your terminal:
+```
+$ node ./node_modules/e2e_training_wheels/dist/install.js
+```
+And run the following command in the terminal:
+```
+$ npm link
+```
+
+Good to go!
+
+## Running the tests
+
+To run the feature tests:
+```
+$ npm run features
+```
+To run unit tests:
+```
+$ npm run specs
+```
+To run both feature and unit tests: 
+```
+npm test
+```
+
+# Questions from Craft Academy
 
 ### Question 1. 
 
@@ -61,5 +114,32 @@ To the best of your knowledge please explain the difference between feature and 
 ### Answer
 A unit test tests logic, a feature test tests the user experience.
 
+# Built with
+
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+[Tailwind](https://tailwindcss.com/docs/what-is-tailwind/) - A utility-first CSS framework for rapidly building custom user interfaces.
+
+# Tested with
+
+[Mocha](https://www.npmjs.com/package/mocha) - Simple, flexible, fun JavaScript test framework for Node.js & The Browser. 
+
+[Chai](https://www.npmjs.com/package/chai) - BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework. 
+
+[Puppeteer](https://www.npmjs.com/package/puppeteer) - Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. 
+
+
+# Author
+
+**Zane Neikena** - [zanenkn](https://github.com/zanenkn)
+
+
+# License
+
+This project utilizes the MIT open-source license. https://opensource.org/licenses/MIT
+
+# Acknowledgments
+
+Kudos to [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) for the README template 
 
 
