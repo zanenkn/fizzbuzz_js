@@ -12,14 +12,20 @@ describe('Fizz Buzz', () => {
     })
 
     it ("returns Fizz if number is divisible by 3", () => {
-        expect(String(fizzBuzz.check(3))).to.include("Fizz!")
+        expect(fizzBuzz.check(3)).to.include("Fizz!")
     })
 
     it ("returns FizzBuzz if number is divisible by 15", () => {
         expect(fizzBuzz.check(15)).to.include("FizzBuzz!")
     })
 
+    it ("returns No Buzz if user hits Check button without entering anything", () => {
+        expect(fizzBuzz.check("")).to.include("No Buzz!")
+    })
 
+    it ("returns No Buzz if user enters 0", () => {
+        expect(fizzBuzz.check(0)).to.include("No Buzz!")
+    })
 
 })
 

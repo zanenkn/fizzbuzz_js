@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FizzBuzz Game</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"  rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <script src="./js/fizz-buzz.js"></script>
 </head>
 <body>
@@ -33,10 +32,9 @@
             let display = document.getElementById("display_value")
             button.addEventListener('click', event => {
                 let value = document.getElementById("value").value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                display.innerHTML = result;
-                
+                    let fizzBuzz = new FizzBuzz
+                    let result = fizzBuzz.check(value)
+                    display.innerHTML = result; 
             })
         })
     </script>
