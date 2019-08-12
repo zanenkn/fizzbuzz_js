@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FizzBuzz Game</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"  rel="stylesheet">
+    <link href="http://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="./src/js/fizz-buzz.js"></script>
     <script src="./src/js/app.js"></script>
 </head>
 <body>
-    <div class="container mx-auto my-10 w-full max-w-sm content-center px-15 pt-6 pb-10 bg-purple-lighter rounded-lg">
+    <div class="container mx-auto my-10 w-full max-w-sm content-center px-15 pt-6 pb-10 bg-purple-200 rounded-lg">
         
         <div class="m-4 text-center ">
-            <p class="text-white text-3xl tracking-wide">FizzBuzz is fun!</p>
+            <p class="text-white text-3xl tracking-wider">FizzBuzz is fun!</p>
         </div>
         
         <div class="m-4 text-center ">
-            <input id="value" type="number" onfocus="this.value=''" placeholder="Enter a number!" required class="bg-purple-lightest appearance-none border-2 border-grey-lighter rounded w-sm py-2 px-4 purple-lighter text-purple leading-tight focus:outline-none focus:bg-white focus:border-purple">
-            <button type="submit" id="button" class="shadow bg-purple hover:bg-purple-light focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Check </button>
+            <input id="value" type="number" onfocus="this.value=''" placeholder="Enter a number!" required class="bg-purple-100 appearance-none border-2 border-grey-200 rounded w-sm py-2 px-4 purple-200 text-purple leading-tight focus:outline-none focus:bg-white focus:border-purple">
+            <button type="submit" id="button" class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Check </button>
         </div>    
         
     </div>
 
-    <div id="display_value" class="text-center text-purple ">
-        </div>
+    <div id="display_value" class="text-center text-purple-500 ">
+    </div>
 </body>
 </html>
