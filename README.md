@@ -217,7 +217,7 @@ CDN is group of servers in different locations. The main principle is that same 
 
 # License
 
-This project utilizes the MIT open-source license. https://opensource.org/licenses/MIT
+This project utilizes the [MIT open-source license](https://opensource.org/licenses/MIT).
 
 <br>
 
